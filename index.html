@@ -12,135 +12,209 @@
   </head>
   <body>
     <header class="site-header" data-elevated="false">
-      <a class="brand" href="#top" aria-label="Michael Diamond home">MD</a>
+      <a class="brand" href="#top" aria-label="Michael Diamond home">
+        <span>Michael Diamond</span>
+      </a>
       <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#profile">Profile</a>
         <a href="#work">Work</a>
         <a href="#approach">Approach</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a class="header-action" href="https://github.com/michaelmdiamond">GitHub</a>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Product builder + software operator</p>
-          <h1>Michael Diamond builds practical software for messy real-world workflows.</h1>
-          <p class="lede">I work at the intersection of product judgment, full-stack implementation, and AI-enabled tooling. Recent projects span coding-session infrastructure, family safety software, paid prediction mechanics, and recommendation systems.</p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#work">View work</a>
-            <a class="button secondary" href="https://github.com/michaelmdiamond">GitHub</a>
-          </div>
-        </div>
-        <aside class="hero-card" aria-label="Profile summary">
+    <main class="profile-shell" id="top">
+      <aside class="identity-panel" aria-label="Michael Diamond profile summary">
+        <div class="portrait-wrap">
           <img src="assets/images/michael-diamond.jpg" alt="Michael Diamond" width="500" height="500">
-          <div>
-            <p class="card-kicker">Current focus</p>
-            <p>Turning ambiguous product ideas into working systems that can be tested, shipped, and improved quickly.</p>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section intro" aria-label="Profile">
-        <div>
-          <p class="section-label">What I do</p>
-          <h2>I like products where the hard part is not just the code.</h2>
-        </div>
-        <p>My best work is in projects with fuzzy requirements, taste-heavy UX decisions, and operational details that need to become simple for users. I care about fast prototypes, clear systems, and making the next decision cheaper.</p>
-      </section>
-
-      <section class="section work" id="work">
-        <div class="section-heading">
-          <p class="section-label">Selected work</p>
-          <h2>Recent projects</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-topline">
-              <span>AI tooling</span>
-              <span>Public</span>
-            </div>
-            <h3>Relay</h3>
-            <p>Mission control for AI coding sessions: a workspace for coordinating agent work, tracking state, and making long-running development flows easier to manage.</p>
-            <a href="https://github.com/michaelmdiamond/relay" aria-label="View Relay on GitHub">View repository</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Family safety</span>
-              <span>Public</span>
-            </div>
-            <h3>Safeguard Inbox</h3>
-            <p>An AI-powered product recall safety hub for parents, built around receipt parsing and recall monitoring.</p>
-            <a href="https://github.com/michaelmdiamond/safeguard-inbox" aria-label="View Safeguard Inbox on GitHub">View repository</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Prediction mechanics</span>
-              <span>Private</span>
-            </div>
-            <h3>Baby Diamond</h3>
-            <p>A paid suggestion and market-style app exploring how tiny financial stakes can improve participation quality.</p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Media systems</span>
-              <span>Private</span>
-            </div>
-            <h3>Tastebuds</h3>
-            <p>A personal recommendation system for movies, TV, books, and podcasts, designed around actual taste rather than generic discovery feeds.</p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Sports tools</span>
-              <span>Private</span>
-            </div>
-            <h3>Dynasty Hub</h3>
-            <p>A TypeScript project for managing dynasty fantasy workflows and turning scattered league context into usable decisions.</p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Consumer MVP</span>
-              <span>Private</span>
-            </div>
-            <h3>Slop or Slap</h3>
-            <p>A lightweight MVP exploring fast judgment, taste, and playful evaluation loops.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section approach" id="approach">
-        <div class="section-heading">
-          <p class="section-label">How I work</p>
-          <h2>Bias toward useful artifacts.</h2>
-        </div>
-        <div class="principles">
-          <div>
-            <h3>Prototype the decision</h3>
-            <p>Build the smallest real thing that teaches whether the idea deserves more surface area.</p>
-          </div>
-          <div>
-            <h3>Keep product and code close</h3>
-            <p>Strong implementation choices come from understanding the user workflow, not treating it as a handoff.</p>
-          </div>
-          <div>
-            <h3>Ship with receipts</h3>
-            <p>Verification matters: working locally is not the same as being clear, deployed, and usable.</p>
+          <div class="status-pill">
+            <span aria-hidden="true"></span>
+            Building
           </div>
         </div>
-      </section>
 
-      <section class="contact" id="contact">
-        <div>
-          <p class="section-label">Contact</p>
-          <h2>Want to compare notes?</h2>
-          <p>I am usually most interested in AI developer tooling, practical consumer software, and product ideas that need both taste and execution.</p>
+        <div class="identity-copy">
+          <p class="eyebrow">Product builder</p>
+          <h1>Michael Diamond</h1>
+          <p class="handle">@michaelmdiamond · United States</p>
+          <p class="bio">I build practical software for messy real-world workflows, usually where product judgment and implementation have to stay close together.</p>
         </div>
-        <a class="button primary" href="https://github.com/michaelmdiamond">Find me on GitHub</a>
+
+        <dl class="stats" aria-label="Portfolio stats">
+          <div>
+            <dt>Focus</dt>
+            <dd>AI tools</dd>
+          </div>
+          <div>
+            <dt>Mode</dt>
+            <dd>MVP to shipped</dd>
+          </div>
+          <div>
+            <dt>Stack</dt>
+            <dd>TypeScript</dd>
+          </div>
+        </dl>
+
+        <div class="side-section">
+          <h2>Experience Includes</h2>
+          <div class="logo-row" aria-label="Experience and project areas">
+            <span>AI</span>
+            <span>UX</span>
+            <span>Ops</span>
+            <span>Web</span>
+          </div>
+        </div>
+
+        <div class="side-actions">
+          <a href="https://github.com/michaelmdiamond">View GitHub</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </aside>
+
+      <section class="content-panel">
+        <nav class="section-tabs" aria-label="Portfolio sections">
+          <a href="#profile" class="active">
+            <span aria-hidden="true">□</span>
+            Profile
+          </a>
+          <a href="#work">
+            <span aria-hidden="true">▦</span>
+            Work
+          </a>
+          <a href="#approach">
+            <span aria-hidden="true">◇</span>
+            Approach
+          </a>
+        </nav>
+
+        <section class="profile-section" id="profile">
+          <div class="section-kicker">About</div>
+          <h2>Product-minded software operator working across AI tooling, consumer workflows, and practical internet businesses.</h2>
+          <p>My best work starts when the problem is still fuzzy: the user workflow is unclear, the product shape is up for debate, and the fastest path forward is a concrete artifact people can react to. I care about prototypes that teach, systems that stay understandable, and software that survives contact with real users.</p>
+        </section>
+
+        <section class="work-section" id="work">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">Selected Work</div>
+              <h2>Recent projects</h2>
+            </div>
+            <p>Current and recent builds from my GitHub workspace.</p>
+          </div>
+
+          <div class="work-list">
+            <article class="work-item">
+              <div class="work-index">01</div>
+              <div class="work-copy">
+                <div class="work-meta">
+                  <span>AI tooling</span>
+                  <span>Public</span>
+                </div>
+                <h3>Relay</h3>
+                <p>Mission control for AI coding sessions: a workspace for coordinating agent work, tracking state, and making long-running development flows easier to manage.</p>
+              </div>
+              <a class="work-link" href="https://github.com/michaelmdiamond/relay" aria-label="View Relay on GitHub">Open</a>
+            </article>
+
+            <article class="work-item">
+              <div class="work-index">02</div>
+              <div class="work-copy">
+                <div class="work-meta">
+                  <span>Family safety</span>
+                  <span>Public</span>
+                </div>
+                <h3>Safeguard Inbox</h3>
+                <p>An AI-powered product recall safety hub for parents, built around receipt parsing and recall monitoring.</p>
+              </div>
+              <a class="work-link" href="https://github.com/michaelmdiamond/safeguard-inbox" aria-label="View Safeguard Inbox on GitHub">Open</a>
+            </article>
+
+            <article class="work-item">
+              <div class="work-index">03</div>
+              <div class="work-copy">
+                <div class="work-meta">
+                  <span>Prediction mechanics</span>
+                  <span>Private</span>
+                </div>
+                <h3>Baby Diamond</h3>
+                <p>A paid suggestion and market-style app exploring how tiny financial stakes can improve participation quality.</p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="work-index">04</div>
+              <div class="work-copy">
+                <div class="work-meta">
+                  <span>Media systems</span>
+                  <span>Private</span>
+                </div>
+                <h3>Tastebuds</h3>
+                <p>A personal recommendation system for movies, TV, books, and podcasts, designed around actual taste rather than generic discovery feeds.</p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="work-index">05</div>
+              <div class="work-copy">
+                <div class="work-meta">
+                  <span>Sports tools</span>
+                  <span>Private</span>
+                </div>
+                <h3>Dynasty Hub</h3>
+                <p>A TypeScript project for managing dynasty fantasy workflows and turning scattered league context into usable decisions.</p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="work-index">06</div>
+              <div class="work-copy">
+                <div class="work-meta">
+                  <span>Consumer MVP</span>
+                  <span>Private</span>
+                </div>
+                <h3>Slop or Slap</h3>
+                <p>A lightweight MVP exploring fast judgment, taste, and playful evaluation loops.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="approach-section" id="approach">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">Approach</div>
+              <h2>How I tend to work</h2>
+            </div>
+          </div>
+
+          <div class="principle-list">
+            <article>
+              <span>01</span>
+              <h3>Prototype the decision</h3>
+              <p>Build the smallest real thing that teaches whether the idea deserves more surface area.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Keep product and code close</h3>
+              <p>Strong implementation choices come from understanding the user workflow, not treating it as a handoff.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Ship with receipts</h3>
+              <p>Verification matters: working locally is not the same as being clear, deployed, and usable.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div>
+            <div class="section-kicker">Contact</div>
+            <h2>Want to compare notes?</h2>
+            <p>I am usually most interested in AI developer tooling, practical consumer software, and product ideas that need both taste and execution.</p>
+          </div>
+          <a href="https://github.com/michaelmdiamond">Find me on GitHub</a>
+        </section>
       </section>
     </main>
 
